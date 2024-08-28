@@ -9,7 +9,7 @@ const HeroSection = () => {
         Ingenieria y Proyectos
         <span className="bg-gradient-to-r from-green-200 via-sky-500 to-blue-600 text-transparent bg-clip-text">
           {" "}
-          Tecnologicos Industriales
+          Tecnológicos Industriales
         </span>
       </h1>
       {/* Titulo */}
@@ -31,16 +31,6 @@ const HeroSection = () => {
         </a>
       </div>
       {/* Boton Contacto */}
-      {/* <div className="flex gap-4 mt-10 justify-center">
-        <img
-          src={ferreteria1}
-          className="rounded-lg flex-1 min-w-0  border border-sky-400 shadow-blue-700 mx-4 my-2"
-        ></img>
-        <img
-          src={ferreteria2}
-          className="rounded-lg flex-1 min-w-0 border border-sky-400 shadow-blue-700 mx-4 my-2"
-        ></img>
-      </div> */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
         <div className="flex justify-center">
           <img

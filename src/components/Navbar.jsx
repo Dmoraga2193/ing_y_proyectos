@@ -59,7 +59,7 @@ const Navbar = () => {
               ))}
             </ul>
             <div className="flex space-x-6">
-              {/* Boton de Ingreso */}
+              {/* Boton de Ingreso  */}
               <a href="" className="py-2 px-3 border rounded-md">
                 Ingresar
               </a>
