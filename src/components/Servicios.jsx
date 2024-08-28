@@ -2,14 +2,14 @@ import { CheckCircle2 } from "lucide-react";
 import camionImg from "../assets/camion.jpg";
 import { checklistItems } from "../constants";
 
-const Workflow = () => {
+const Servicios = () => {
   return (
     <div className="mt-20">
       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide">
-        Trabaja
+        Nuestros
         <span className="bg-gradient-to-r from-green-200 via-sky-500 to-blue-600 text-transparent bg-clip-text">
           {" "}
-          con nosotros
+          servicios
         </span>
       </h2>
       <div className="flex flex-wrap justify-center">
@@ -38,4 +38,4 @@ const Workflow = () => {
   );
 };
 
-export default Workflow;
+export default Servicios;
