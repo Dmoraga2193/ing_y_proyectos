@@ -1,10 +1,12 @@
 import Carousel from "./components/Carousel";
-import Contacto from "./components/Contacto";
+// import Contacto from "./components/Contacto";
 import Caracteristicas from "./components/Caracteristicas";
 import Inicio from "./components/Inicio";
 import Navbar from "./components/Navbar";
 import Servicios from "./components/Servicios";
-import { APIProvider } from "@vis.gl/react-google-maps";
+import Contacto2 from "./components/Contacto2";
+import Contacto3 from "./components/Contacto3";
+import { Footer } from "./components/Footer";
 
 const App = () => {
   return (
@@ -24,8 +26,17 @@ const App = () => {
         <section id="servicios">
           <Servicios />
         </section>
-        <section id="contacto">
+        {/* <section id="contacto">
           <Contacto />
+        </section> */}
+        <section id="contacto2">
+          <Contacto2 />
+        </section>
+        <section id="contacto3">
+          <Contacto3 />
+        </section>
+        <section>
+          <Footer />
         </section>
       </div>
     </>
