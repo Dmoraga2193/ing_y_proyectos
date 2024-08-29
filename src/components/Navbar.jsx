@@ -27,21 +27,6 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          {/* Boton de Ingreso */}
-          <div className="hidden lg:flex justify-center space-x-12 items-center">
-            <a href="" className="py-2 px-3 border rounded-md">
-              Ingresar
-            </a>
-            {/* Boton de Ingreso */}
-            {/* Boton de crear cuenta */}
-            <a
-              href=""
-              className="bg-gradient-to-r from-sky-400 to-blue-700 py-2 px-3 rounded-md shadow-custom-blue"
-            >
-              Crear cuenta
-            </a>
-            {/* Boton de crear cuenta */}
-          </div>
           {/* Boton despliegue menu */}
           <div className="lg:hidden md:flex flex-col justify-end">
             <button onClick={toggleNavBar}>
@@ -58,21 +43,6 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <div className="flex space-x-6">
-              {/* Boton de Ingreso  */}
-              <a href="" className="py-2 px-3 border rounded-md">
-                Ingresar
-              </a>
-              {/* Boton de Ingreso */}
-              {/* Boton de crear cuenta */}
-              <a
-                href=""
-                className="py-2 px-3 rounded-md bg-gradient-to-r from-sky-400 to-blue-700 shadow-custom-blue"
-              >
-                Crear cuenta
-              </a>
-              {/* Boton de crear cuenta */}
-            </div>
           </div>
         )}
         {/* Boton despliegue menu */}

@@ -1,7 +1,7 @@
 import ferreteria1 from "../assets/ferreteria1.jpg";
 import ferreteria2 from "../assets/ferreteria2.jpg";
 
-const HeroSection = () => {
+const Inicio = () => {
   return (
     <div className="flex flex-col items-center mt-6 lg:mt-20">
       {/* Titulo */}
@@ -49,4 +49,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Inicio;
