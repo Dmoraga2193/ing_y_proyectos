@@ -1,3 +1,4 @@
+import React from "react";
 import { features } from "../constants";
 
 const Caracteristicas = () => {
