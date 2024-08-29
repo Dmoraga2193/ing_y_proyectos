@@ -4,6 +4,7 @@ import Caracteristicas from "./components/Caracteristicas";
 import Inicio from "./components/Inicio";
 import Navbar from "./components/Navbar";
 import Servicios from "./components/Servicios";
+import { APIProvider } from "@vis.gl/react-google-maps";
 
 const App = () => {
   return (
@@ -17,10 +18,10 @@ const App = () => {
         <section id="inicio">
           <Inicio />
         </section>
-        <section id="servicios">
+        <section id="caracteristicas">
           <Caracteristicas />
         </section>
-        <section id="clientes">
+        <section id="servicios">
           <Servicios />
         </section>
         <section id="contacto">

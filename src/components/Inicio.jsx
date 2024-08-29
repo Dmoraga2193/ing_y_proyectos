@@ -3,7 +3,7 @@ import ferreteria2 from "../assets/ferreteria2.jpg";
 
 const Inicio = () => {
   return (
-    <div className="flex flex-col items-center mt-6 lg:mt-20">
+    <div className="flex flex-col items-center mt-6 lg:mt-20 relative border-b border-neutral-800 min-h-[900px]">
       {/* Titulo */}
       <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
         Ingenieria y Proyectos
@@ -14,23 +14,13 @@ const Inicio = () => {
       </h1>
       {/* Titulo */}
       {/* Descripcion */}
-      <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl">
+      <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl py-10">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
         recusandae illo deleniti, quisquam similique officiis soluta inventore
         magni eius veniam hic autem, ipsum laboriosam, molestias laborum nulla
         nam. Odit, ut?
       </p>
       {/* Descripcion */}
-      {/* Boton Contacto */}
-      <div className="flex justify-center my-10">
-        <a
-          href=""
-          className="bg-gradient-to-r from-green-400 to-blue-700 py-3 px-4 mx-3 rounded-md"
-        >
-          Contactanos
-        </a>
-      </div>
-      {/* Boton Contacto */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
         <div className="flex justify-center">
           <img

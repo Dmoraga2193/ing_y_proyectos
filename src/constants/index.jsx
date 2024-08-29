@@ -100,24 +100,24 @@ export const features = [
 
 export const checklistItems = [
   {
-    title: "Code merge made easy",
+    title: "Consultoría en Mejora de Procesos",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Nos especializamos en evaluar y ajustar los procesos internos de su empresa para implementar mejoras continuas. Nuestro objetivo es optimizar la eficiencia operativa y reducir costos, asegurando que su empresa funcione con el máximo rendimiento.",
   },
   {
-    title: "Review code without worry",
+    title: "Definición y Gestión de Objetivos Estratégicos",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Nos encargamos de ayudarle a establecer metas claras y alcanzables que alineen a toda su organización. Gestionamos el progreso hacia estos objetivos para garantizar que se logren resultados específicos y satisfactorios.",
   },
   {
-    title: "AI Assistance to reduce time",
+    title: "Optimización de Recursos y Procesos",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Evaluamos y ajustamos los recursos y procesos dentro de su empresa para maximizar la eficiencia. Nuestro enfoque está en mejorar la productividad y reducir el desperdicio, creando un entorno de trabajo más ágil y eficaz.",
   },
   {
-    title: "Share work in minutes",
+    title: "Programas de Capacitación y Desarrollo Profesional",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Implementamos programas de formación continua diseñados para desarrollar las habilidades técnicas y blandas de su personal. Ofrecemos talleres, cursos y certificaciones para asegurar que su equipo esté preparado para enfrentar los desafíos del mercado.",
   },
 ];
 

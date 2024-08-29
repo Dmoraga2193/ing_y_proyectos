@@ -4,8 +4,8 @@ import { checklistItems } from "../constants";
 
 const Servicios = () => {
   return (
-    <div className="mt-20">
-      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide">
+    <div className="mt-20 relative border-b border-neutral-800 min-h-[750px]">
+      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide ">
         Nuestros
         <span className="bg-gradient-to-r from-green-200 via-sky-500 to-blue-600 text-transparent bg-clip-text">
           {" "}
@@ -13,9 +13,9 @@ const Servicios = () => {
         </span>
       </h2>
       <div className="flex flex-wrap justify-center">
-        <div className="p-8 w-full lg:w-1/2  ">
+        <div className="p-8 w-full lg:w-1/2 h-full lg:h-auto">
           <img
-            className="rounded-l-lg gradient-mask-r-0"
+            className="rounded-l-lg gradient-mask-r-0 h-full object-cover"
             src={camionImg}
             alt=""
           />
@@ -24,7 +24,7 @@ const Servicios = () => {
           {checklistItems.map((item, index) => (
             <div key={index} className="flex mb-12">
               <div className="text-sky-500 mx-6 bg-neutral-900 h-10 w-10 p-2 justify-center items-center rounded-full">
-                <CheckCircle2></CheckCircle2>
+                <CheckCircle2 />
               </div>
               <div>
                 <h5 className="mt-1 mb-2 text-xl">{item.title}</h5>
