@@ -60,7 +60,7 @@ const Contacto2 = () => {
   };
 
   return (
-    <div className="grid md:grid-cols-2 items-center overflow-hidden shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-3xl max-w-6xl mx-auto bg-gray-900 my-6 font-[sans-serif]">
+    <div className="mt-20 grid md:grid-cols-2 items-center overflow-hidden shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-3xl max-w-6xl mx-auto bg-gray-900 my-6">
       <div className="p-8 bg-gray-900">
         <h2 className="text-3xl font-bold text-white">
           Contactate con{" "}

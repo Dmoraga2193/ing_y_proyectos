@@ -7,6 +7,7 @@ import Servicios from "./components/Servicios";
 import Contacto2 from "./components/Contacto2";
 import Contacto3 from "./components/Contacto3";
 import { Footer } from "./components/Footer";
+import Empresas from "./components/Empresas";
 
 const App = () => {
   return (
@@ -23,16 +24,19 @@ const App = () => {
         <section id="caracteristicas">
           <Caracteristicas />
         </section>
+        <section id="empresas">
+          <Empresas />
+        </section>
         <section id="servicios">
           <Servicios />
         </section>
         {/* <section id="contacto">
           <Contacto />
         </section> */}
-        <section id="contacto2">
+        {/* <section id="contacto2">
           <Contacto2 />
-        </section>
-        <section id="contacto3">
+        </section> */}
+        <section id="contacto">
           <Contacto3 />
         </section>
         <section>

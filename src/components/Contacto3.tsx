@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 
@@ -8,7 +8,7 @@ const ContactSection: React.FC = () => {
     email: "",
     telefono: "",
     mensaje: "",
-    codigoPais: "+1", // Valor predeterminado para el código del país
+    codigoPais: "+1", // Código de país predeterminado
   });
 
   const [errors, setErrors] = useState({
@@ -18,7 +18,9 @@ const ContactSection: React.FC = () => {
     mensaje: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -59,6 +61,7 @@ const ContactSection: React.FC = () => {
             email: "",
             telefono: "",
             mensaje: "",
+            codigoPais: "+1",
           });
         },
         (error) => {
@@ -157,7 +160,7 @@ const ContactSection: React.FC = () => {
                         Radal #1015, Quinta Normal, Santiago
                       </h5>
                     </a>
-                    <div className="z-10 relative h-full max-md:min-h-[5000px]">
+                    <div className="z-10 relative h-full max-md:min-h-[100px]">
                       <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d588.5409697596277!2d-70.70244289437535!3d-33.44173768915115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c46fa46fbd57%3A0xff601560cbb5e0e7!2sFerreteria%20Manquehue%20Limitada!5e0!3m2!1ses-419!2scl!4v1724950984850!5m2!1ses-419!2scl"
                         className="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg"
@@ -176,6 +179,7 @@ const ContactSection: React.FC = () => {
             <h2 className="text-indigo-600 font-manrope text-4xl font-semibold leading-10 mb-11">
               Envíanos tu consulta
             </h2>
+
             <form onSubmit={sendEmail}>
               <div className="mb-10">
                 {errors.nombre && (
@@ -205,31 +209,15 @@ const ContactSection: React.FC = () => {
                 />
               </div>
 
-              <div className="mb-10">
-                <div className="flex flex-col mb-2">
-                  {errors.telefono && (
-                    <p className="text-red-500 mb-2">{errors.telefono}</p>
-                  )}
-                  <select
-                    name="codigoPais"
-                    className="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-2"
-                    value={formData.codigoPais}
-                    onChange={handleChange}
-                  >
-                    <option value="+1">+1 USA</option>
-                    <option value="+34">+34 España</option>
-                    <option value="+56">+56 Chile</option>
-                    {/* Agrega más códigos según tus necesidades */}
-                  </select>
-                  <input
-                    type="text"
-                    name="telefono"
-                    className="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4"
-                    placeholder="Teléfono"
-                    value={formData.telefono}
-                    onChange={handleChange}
-                  />
-                </div>
+              <div className="mb-10 flex items-center">
+                <input
+                  type="text"
+                  name="telefono"
+                  className="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4"
+                  placeholder="Teléfono"
+                  value={formData.telefono}
+                  onChange={handleChange}
+                />
               </div>
 
               <div className="mb-10">
