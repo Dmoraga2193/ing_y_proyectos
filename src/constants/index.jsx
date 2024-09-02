@@ -13,10 +13,9 @@ import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const navItems = [
-  { label: "Inicio", href: "#carusel" },
+  { label: "Inicio", href: "#inicio" },
   { label: "Quienes Somos", href: "#quienessomos" },
   { label: "Servicios", href: "#servicios" },
-  { label: "Clientes", href: "#clientes" },
   { label: "Contacto", href: "#contacto" },
 ];
 
