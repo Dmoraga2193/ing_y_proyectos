@@ -7,7 +7,7 @@ import "aos/dist/aos.css"; // Importación de los estilos de AOS
 const Caracteristicas = () => {
   return (
     <>
-      <div className="relative min-h-[700px] overflow-hidden">
+      <div className="relative min-h-[700px] overflow-hidden ">
         {/* Video de fondo */}
         <video
           autoPlay

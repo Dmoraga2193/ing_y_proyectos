@@ -10,6 +10,7 @@ import React, { useEffect } from "react"; // Asegúrate de que useEffect esté i
 import "animate.css"; // Importación de animate.css
 import AOS from "aos";
 import "aos/dist/aos.css"; // Importa los estilos CSS de AOS
+import Staff from "./components/Staff";
 
 const App = () => {
   useEffect(() => {
@@ -35,20 +36,20 @@ const App = () => {
       <Caracteristicas />
 
       <div className="max-w-7xl mx-auto pt-20 px-6">
-        <section id="inicio"></section>
-
-        <section id="caracteristicas"></section>
-
         <section id="servicios">
           <Servicios />
         </section>
-        <section id="contacto">
-          <Contacto3 />
-        </section>
-        <section>
-          <Footer />
-        </section>
       </div>
+
+      <section id="staff">
+        <Staff />
+      </section>
+      <section id="contacto">
+        <Contacto3 />
+      </section>
+      <section>
+        <Footer />
+      </section>
     </>
   );
 };

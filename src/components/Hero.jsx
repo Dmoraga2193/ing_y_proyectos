@@ -30,11 +30,14 @@ const Hero = () => {
           </h1>
 
           {/* Descripcion */}
-          <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl py-10">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
-            recusandae illo deleniti, quisquam similique officiis soluta
-            inventore magni eius veniam hic autem, ipsum laboriosam, molestias
-            laborum nulla nam. Odit, ut?
+          <p className="mt-10 text-lg text-center text-neutral-400 max-w-4xl py-10">
+            es una empresa líder en ingeniería y proyectos tecnológicos
+            industriales. Nos especializamos en el diseño, desarrollo y
+            ejecución de soluciones innovadoras para optimizar procesos
+            industriales y mejorar la eficiencia operativa. Nuestro equipo de
+            expertos combina experiencia técnica y creatividad para ofrecer
+            resultados de alta calidad que cumplen con los más altos estándares
+            de la industria.
           </p>
         </div>
       </div>
