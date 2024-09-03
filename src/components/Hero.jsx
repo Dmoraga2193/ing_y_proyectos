@@ -1,5 +1,6 @@
 import React from "react";
-import videoInicio from "../assets/video_inicio.mp4";
+import videoInicio from "../assets/video_inicio_nuevo.webm";
+import "aos/dist/aos.css"; // Importación de los estilos de AOS
 
 const Hero = () => {
   return (
@@ -12,11 +13,11 @@ const Hero = () => {
           muted
           className="absolute top-0 left-0 w-full h-[900px] object-cover"
         >
-          <source src={videoInicio} type="video/mp4" />
+          <source src={videoInicio} type="video/webm" />
         </video>
         <div
-          className="flex flex-col items-center mt-6 lg:mt-20 relative"
           data-aos="fade-up"
+          className="flex flex-col items-center mt-6 lg:mt-20 relative"
         >
           {/* Titulo */}
 

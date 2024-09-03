@@ -1,6 +1,6 @@
 import React from "react";
 import { features } from "../constants";
-import videoParticulas from "../assets/particulas.mp4";
+import videoParticulas from "../assets/particulas.webm";
 import "animate.css"; // Importación de animate.css
 import "aos/dist/aos.css"; // Importación de los estilos de AOS
 
@@ -15,7 +15,7 @@ const Caracteristicas = () => {
           muted
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src={videoParticulas} type="video/mp4" />
+          <source src={videoParticulas} type="video/webm" />
         </video>
         <div className="relative mt-20 border-b border-neutral-800 min-h-[600px]">
           <div className="text-center">

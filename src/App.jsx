@@ -15,7 +15,7 @@ const App = () => {
   useEffect(() => {
     AOS.init({
       offset: 20, // Desplazamiento de 20px desde el punto de inicio
-      duration: 800, // Duración de la animación en milisegundos
+      duration: 600, // Duración de la animación en milisegundos
       easing: "ease-in-out", // Función de easing
       delay: 80, // Retraso de 80 milisegundos
       once: false, // Si la animación se debe ejecutar solo una vez
