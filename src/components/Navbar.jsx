@@ -1,13 +1,12 @@
-import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import React, { useState } from "react";
 import logo from "../assets/logo.png";
-import { navItems } from "../constants";
+import { navItems } from "../constants"; // Asegúrate de que navItems tenga { href: "", label: "" } para cada enlace
 
 const Navbar = () => {
-  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleNavBar = () => {
-    setMobileDrawerOpen(!mobileDrawerOpen);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -17,9 +16,36 @@ const Navbar = () => {
           <div className="flex items-center flex-shrink-0">
             {/* Logo empresa en Navbar */}
             <img className="h-10 w-20 mr-5 rounded-lg" src={logo} alt="logo" />
-            <span className="text-xl tracking-tight">Ferreteria Manquehue</span>
+            <span className="text-xl tracking-tight text-white">
+              Ing Protec
+            </span>
           </div>
-          <ul className="hidden lg:flex ml-14 space-x-12">
+
+          {/* Botón de hamburguesa para pantallas pequeñas */}
+          <div className="lg:hidden">
+            <button
+              onClick={toggleMenu}
+              className="text-gray-300 hover:text-white focus:outline-none"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+
+          {/* Menú normal para pantallas grandes */}
+          <ul className="hidden lg:flex lg:space-x-12">
             {navItems.map((item, index) => (
               <li key={index}>
                 <a href={item.href} className="hover:text-sky-500">
@@ -28,26 +54,22 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          {/* Botón despliegue menú */}
-          <div className="lg:hidden md:flex flex-col justify-end">
-            <button onClick={toggleNavBar}>
-              {mobileDrawerOpen ? <X /> : <Menu />}
-            </button>
-          </div>
-        </div>
-        {mobileDrawerOpen && (
-          <div className="fixed top-0 right-0 z-20 bg-neutral-900 w-full h-full p-12 flex flex-col justify-center items-center lg:hidden">
-            <ul>
+
+          {/* Menú desplegable para pantallas pequeñas */}
+          {isMenuOpen && (
+            <ul
+              className={`absolute top-14 left-0 right-0 bg-neutral-900 bg-opacity-80 backdrop-blur-lg rounded-md shadow-lg p-4 text-white lg:hidden`}
+            >
               {navItems.map((item, index) => (
-                <li key={index} className="py-5">
-                  <a href={item.href} className="text-white">
+                <li key={index} className="py-2 border-b border-neutral-600">
+                  <a href={item.href} className="block hover:text-sky-500">
                     {item.label}
                   </a>
                 </li>
               ))}
             </ul>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </nav>
   );
