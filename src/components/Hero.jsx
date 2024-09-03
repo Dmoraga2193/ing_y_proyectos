@@ -14,7 +14,10 @@ const Hero = () => {
         >
           <source src={videoInicio} type="video/mp4" />
         </video>
-        <div className="flex flex-col items-center mt-6 lg:mt-20 relative ">
+        <div
+          className="flex flex-col items-center mt-6 lg:mt-20 relative"
+          data-aos="fade-up"
+        >
           {/* Titulo */}
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">

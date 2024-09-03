@@ -76,9 +76,12 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section className="py-24">
+    <section className="py-10">
       {/* Título de la sección con gradiente */}
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center mb-12">
+      <div
+        data-aos="fade-down"
+        className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center mb-12"
+      >
         <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide ">
           Contac
           <span className="bg-gradient-to-r from-green-200 via-sky-500 to-blue-600 text-transparent bg-clip-text">
@@ -86,7 +89,10 @@ const ContactSection: React.FC = () => {
           </span>
         </h2>
       </div>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div
+        data-aos="flip-down"
+        className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-20"
+      >
         <div className="grid lg:grid-cols-2 grid-cols-1">
           <div className="lg:mb-0 mb-10">
             <div className="group w-full h-full">
